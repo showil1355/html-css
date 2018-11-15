@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>외부 서식 링크와 하이퍼링크</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./css/ex3.css">
+    <script src="http://code.jquery.com/juqery-latest.js"></script>
+    <script>
+        //juqery 처리부
+        function kbs(){
+            alert("오늘도 무사히")
+        }
+    </script>
+</head>
+<body>
+    <header class="hd">여기는 헤더입니다.</header>
+    <section class="page" id="page1">
+        <h2>첫 번째 페이지</h2>
+        <h3>하이퍼링크 태그 사용법</h3>
+        <nav class="breadcrumb">
+            <ul>
+                <li>
+                    <a href="20181113_ex1.html">내부 링크 - ex1.html</a>
+                </li>
+                <li>
+                    <a href="http://www.naver.com" target="_blank">새탭에서 네이버로 이동</a>
+                </li>
+                <li>
+                    <a href="#page3">네임앵커에 의한 화면이동</a>
+                </li>
+                <li>
+                    <a href="mailto:showil20@sayinfo.co.kr">메일 보내기</a>
+                </li>
+                <li>
+                    <a href="tel:010-4277-0000"> 전화걸기</a>
+                </li>
+                <li>
+                    <a href="sms:010-4277-0000">문자보내기</a>
+                </li>
+                <li>
+                    <a onclick="kbs()">원클릭 이벤트 기능</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </section>
+    <section class="page" id="page2">
+        <h2>두 번째 페이지</h2>
+    </section>
+    <section class="page" id="page3">
+        <h2>세 번째 페이지</h2>
+    </section>
+    <footer class="ft">
+        여기는 풋터입니다
+        <a href="#">맨 위로</a>
+    </footer>
+</body>
+</html>
