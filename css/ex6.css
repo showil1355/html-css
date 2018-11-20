@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    font-size: 0;
+    border: 0;
+}
+
+.hd {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.75);
+    z-index: 99;
+}
+
+.hdWrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.hdWrap #logo {
+    display: block;
+    width: 50px;
+    height: 50px;
+    float: left;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#gnb {
+    font-family: 'Nanum Pen Script', cursive;
+    float: right;
+    width: 500px;
+    margin-top: 10px;
+}
+
+#gnb li {
+    float: left;
+    width: 100px;
+    line-height: 50px;
+}
+
+#gnb li a {
+    display: block;
+    font-size: 24px;
+    color: #fff;
+    transition: 0.5s;
+    text-align: center;
+}
+
+#gnb a:link {  /*a 태그 안에 링크가 비어 있으면 해당이 안된다*/
+    color: aqua;
+}
+
+#gnb a:visited {
+    color: #fff;
+}
+
+#gnb a:hover{
+    color: black;
+    font-size: 28px;
+}
+
+#gnb a:active{    /*마우스로 그부분을 누를때*/
+    color: pink;
+    font-size: 28px;
+}
+
+#gnb a:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: transparent;
+}
+
+#gnb a:before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: transparent;
+}
+
+#gnb a:hover::after, #gnb a:hover::before {
+    background-color: #fff;
+}
+
+#gnb li:first-child a {  /*li a첫번째 */
+    color: purple;
+}
+
+#gnb li:nth-child(2) a{  /*li a두번째 선택자*/
+    color: #ca1;
+}
+
+#gnb li:last-child a{ /*li 마지막 선택자*/
+    color: skyblue;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pageWrap {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.pageTitle {
+    padding-top: 80px;
+}
+
+/*page1 시작*/
+#page1 {
+    background-image: url(../img/bg1.jpg);
+    background-attachment: fixed; /*그림고정*/
+}
+
+.titleBox {
+    width: 900px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.tit1 {
+    line-height: 150px;
+}
+
+.com1 {
+    line-height: 2;
+    font-size: 16px;
+}
+
+.more {
+    display: block;
+    width: 150px;
+    line-height: 60px;
+    margin: 60px auto;
+    text-align: center;
+    margin-top: 120px;
+    color: #fff;
+    background-color: #1ac;
+}
+/*page1 끝*/
+
+/*page2 시작*/
+#page2 {
+    background-color: #333;
+}
+
+.grid {
+    width: 100%;
+    padding-top: 50px;
+}
+
+.grid .item{
+    float: left;
+    margin-right: 150px;
+    width: 300px;
+    height: 500px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.grid .item[data-type="item3"] {  /* 데이터 타입으로 css조정 */
+    margin-right: 0;    
+}
+
+.grid .item a {
+    color: #333;
+}
+
+.grid .gridTit {
+    padding-left: 15px;
+    line-height: 3;
+}
+
+.grid .gridCom {
+    padding: 15px;
+    height: 180px;
+    
+}
+
+.grid .detail {
+    text-align: right;
+    padding-right: 15px;
+    font-size: 14px;
+    color: blue;
+}
+/*page2 끝*/
+
+/*page3 시작*/
+#page3 {
+    background-color: bisque;    
+}
+
+#tab {
+    width: 1200px;
+    padding-top: 50px;
+}
+
+.tabBtnBox {
+    width: 1200px;
+}
+
+.tabBtn {
+    float: left;
+    padding: 10px;
+}
+
+.tabBtn a {
+    display: block;
+    width: 100px;
+    line-height: 36px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.tabCon {
+    display: none;
+}
+
+.tabCon:target {
+    display: block;
+}
+/*page3 끝*/
+
+
+
+.ft {
+    width: 100%;
+    height: 100px;
+    background-color: #222;
+    border-top: 5px solid #999;
+    color: #fff;
+}
+
+.ftWrap {
+    width: 1200px; margin: 0 auto;
+}
+
+#fnb {
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+}
+
+#fnb li {
+    float: left; 
+    padding: 0px 20px;
+}
+
+#fnb li a {
+    display: block;
+    color: #eee;
+    font-size: 12px;
+    line-height: 40px;
+}
+
+.copyright {
+    line-height: 60px;
+    text-align: center;
+}
