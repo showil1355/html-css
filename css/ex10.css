@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.wrap {
+    width: 336px;
+    height: 336px;
+    margin: 20px auto;
+}
+
+.box {
+    width: 30px;
+    height: 30px;
+    display: block;
+    padding: 20px;
+    margin: 5px;
+    float: left;
+    border: 2px solid #000;
+}
+
+.bord {
+    border-radius: 10px;
+}
+
+.opa {
+    opacity: 0.2;
+}
+
+.size {
+    box-sizing: border-box;
+}
+
+.non {
+    display: none;
+}

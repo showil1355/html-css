@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.page {
+    clear: both;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.back1 {
+    background:url("../img/ex1.png") bottom / 50% no-repeat fixed #09c;
+    /* image position/size repeat attachment background-color순서 */
+}
+
+.back2 {
+    background-color: aqua;
+    background-color: #333;
+    color: #fff;
+}
+
+.back3 {
+    /*먼저 쓴 배경이 위로 올라온다.*/
+    background-image: url("../img/ex2.png"), url("../img/ex1.png"); 
+    background-repeat: no-repeat, repeat;
+    background-position: center center; /*왼쪽이 좌우 오른쪽이 위아래*/
+}
+
+.back4 {
+    background-image: url(../img/bg1.jpg);
+    background-size: cover;  /*왼쪽이 가로 오른쪽이 세로*/
+    background-attachment: fixed; /*이미지를 고정시킨다.*/
+}
+
+.back5 {
+    background:rgb(128, 180, 10);
+}
+
+.back6 {
+    background:hsl(240, 40%, 38%);
+}
+
+.back7 {
+    /*각도 순서가 중요*/
+    /*참고사이트 : http://www.colorzilla.com/gradient-editor/ */
+    background:linear-gradient(-90deg, red, yellow);

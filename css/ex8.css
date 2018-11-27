@@ -1,0 +1,59 @@
+.align1 {
+    text-align: center;
+}
+
+.align2 {
+    text-align: right;
+}
+
+.vt_align1 img{
+    vertical-align: middle;
+}
+
+.indent1 {
+    text-indent: 50px;
+}
+
+.trans1 {
+    text-transform: uppercase;
+}
+
+.trans2 {
+    text-transform: capitalize;
+}
+
+.trans3 {
+    text-transform: lowercase;
+}
+
+.deco1 {
+    text-decoration: underline;
+}
+
+.deco2 {
+    text-decoration: line-through;
+}
+
+.deco3 {
+    text-decoration: overline;
+}
+
+.deco4 {
+    text-decoration: none;
+}
+
+.letter1 {
+    letter-spacing: 20px;
+}
+
+.letter2 {
+    letter-spacing: 50px;
+}
+
+.word1 {
+    word-spacing: 20px;
+}
+
+.word2 {
+    word-spacing: -5px;
+}
